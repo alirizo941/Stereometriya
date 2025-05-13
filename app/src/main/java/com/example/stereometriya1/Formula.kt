@@ -2,5 +2,6 @@ package com.example.stereometriya1
 
 data class Formula(
     val name: String,
-    val description: String
+    val description: String,
+    val imageResId: Int
 )

@@ -4,6 +4,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.stereometriya1.DetailActivity
@@ -16,6 +17,7 @@ class FormulaAdapter(private val formulaList: List<Formula>) :
     class FormulaViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val formulaName: TextView = itemView.findViewById(R.id.formulaNameText)
         val formulaDesc: TextView = itemView.findViewById(R.id.formulaDescText)
+        val formulaImage: ImageView = itemView.findViewById(R.id.formulaImage)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FormulaViewHolder {
@@ -28,6 +30,7 @@ class FormulaAdapter(private val formulaList: List<Formula>) :
         val formula = formulaList[position]
         holder.formulaName.text = formula.name
         holder.formulaDesc.text = formula.description
+        holder.formulaImage.setImageResource(formula.imageResId)
 
         holder.itemView.setOnClickListener {
             val context = holder.itemView.context

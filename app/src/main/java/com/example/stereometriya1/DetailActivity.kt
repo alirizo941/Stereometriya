@@ -118,7 +118,7 @@ class DetailActivity : AppCompatActivity() {
                 shapeImage.setImageResource(R.drawable.ellipsoid)
             }
 
-            "Truncated konus (Kesilgan konus)" -> {
+            "Kesilgan konus" -> {
                 input1.hint = "Yuqori radius (r1)"
                 input2.hint = "Pastki radius (r2)"
                 input3.hint = "Balandlik (h)"
@@ -218,7 +218,7 @@ class DetailActivity : AppCompatActivity() {
                     formulaText
                 }
 
-                "Truncated konus (Kesilgan konus)" -> {
+                "Kesilgan konus" -> {
                     if (a == null || b == null || c == null) return showError()
                     val r1 = a
                     val r2 = b
