@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Orqaga qaytish tugmasi -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_back"
+        android:contentDescription="Orqaga"
+        android:padding="12dp"
+        android:layout_margin="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Shakl nomi -->
+            <TextView
+                android:id="@+id/shapeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shakl nomi"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Rasm -->
+            <ImageView
+                android:id="@+id/shapeImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_shape_placeholder"
+                android:background="@color/white"/>
+
+            <!-- Tushuntirish matni -->
+            <TextView
+                android:id="@+id/shapeDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bu yerda shakl haqida to'liq tushuntirish bo'ladi."
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
